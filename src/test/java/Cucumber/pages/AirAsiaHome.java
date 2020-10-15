@@ -33,6 +33,9 @@ public class AirAsiaHome {
 	@FindBy(xpath="(//div[@id='aa-web-search-button'])[1]")
 	public WebElement submitButton;
 
+	@FindBy(id="loginModal")
+	public WebElement loginButton;
+	
 	public AirAsiaHome(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

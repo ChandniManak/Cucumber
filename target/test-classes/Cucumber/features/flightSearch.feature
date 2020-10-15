@@ -1,5 +1,6 @@
 Feature: Verify if the user is able to search flight on Air Asia website
 
+@flight
 Scenario: 
 Given User is navigated successfully to the website "https://www.airasia.com/en/gb"
 	And Verify its Title

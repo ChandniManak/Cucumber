@@ -10,9 +10,14 @@ import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
-@CucumberOptions(plugin = { "pretty", "json:target/Cucumber-reports/Cucumber.json",
-		"junit:target/Cucumber-reports/Cuucmber.xml", "html:target/Cuucmber-reports" }, monochrome = true, glue = {
-				"Cucumber.steps" }, features = { "src/test/resources/Cucumber/features" })
+@CucumberOptions(
+	plugin = { "pretty", "json:target/Cucumber-reports/Cucumber.json",
+		"junit:target/Cucumber-reports/Cuucmber.xml",
+		"html:target/Cuucmber-reports" }, 
+	monochrome = true, 
+	glue = { "Cucumber.steps" }, 
+	tags = ("@login") , 
+	features = { "src/test/resources/Cucumber/features" })
 public class RunnerTest {
 	private TestNGCucumberRunner testNGCucumberRunner;
 
