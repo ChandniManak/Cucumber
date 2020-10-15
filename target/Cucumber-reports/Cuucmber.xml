@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.638">
+<testcase classname="Verify if the user is able to search flight on Air Asia website" name="_2" time="34.255">
+<system-out><![CDATA[Given User is navigated successfully to the website "https://www.airasia.com/en/gb".passed
+And Verify its Title........................................................passed
+And Click on Flights Icon...................................................passed
+And Enter Origin as "Bengaluru".............................................passed
+And Enter Destination as "Pune".............................................passed
+And Select Depart date as "15/12/2020"......................................passed
+And Select Return type as "One Way".........................................passed
+When User clicks on Search Button...........................................passed
+Then Verify that the user is navigated successfully to search flight page...passed
+]]></system-out>
+</testcase>
+</testsuite>
